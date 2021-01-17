@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     <!-- basic -->
+     <meta charset="utf-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <!-- mobile metas -->
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+     <!-- site metas -->
+     <title>Pragya Fashions</title>
+     <meta name="keywords" content="">
+     <meta name="description" content="">
+     <meta name="author" content="">
+     <!-- bootstrap css -->
+     <link rel="stylesheet" href="./src/css/bootstrap.min.css">
+     <!-- style css -->
+     <link rel="stylesheet" href="./src/css/style.css">
+     <!-- Responsive-->
+     <link rel="stylesheet" href="./src/css/responsive.css">
+     <!-- fevicon -->
+     <!-- Scrollbar Custom CSS -->
+     <link rel="stylesheet" href="./src/css/jquery.mCustomScrollbar.min.css">
+     <!-- Tweaks for older IEs-->
+     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+     <!--[if lt IE 9]>
+     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+     <style>
+
+      .product-hover{
+        opacity: 0;
+      }
+    
+      .hoverle:hover .product-hover{
+        opacity: 1;
+      }
+    
+      .fancybox-container.fancybox-is-open{
+        display: none;
+      }
+    
+      .service-box{
+        border: 1px solid #0fc690;
+      }
+    
+    </style>}
+  </head>
+  <body>
+    <div class="loader_bg">
+      <div class="loader"><img src="./src/images/loading.gif" alt="#" /></div>
+    </div>
+    <header>
+    <div class="header">
+      <div class="container">
+         <div class="row">
+            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-4 col logo_section">
+               <div class="full">
+                  <div class="center-desk">
+                     <div class="logo"> <a href="index.html" style="white-space: nowrap; z-index: 1000;">Pragya Fashions</a></div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-xl-9 col-lg-9 col-md-12 col-sm-12" style="text-align: right;">
+               <div class="menu-area" style="z-index: 999;">
+                  <div class="limit-box">
+                     <nav class="main-menu">
+                        <ul class="menu-area-main">
+                           <li class="active"> <a href="{% url 'core:index">Home</a> </li>
+                           <li> <a href="{% url 'core:index#about">About</a> </li>
+                           <li> <a href="{% url 'core:index#testimonial">Contact us</a> </li>
+                           <li> <a href="{% url 'core:products">Products</a> </li>
+                           <li> <a href="{% url 'core:clients">Our Clients</a> </li>
+                        </ul>
+                     </nav>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- end header inner --> 
+   </header>
+
+   <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./src/js/popper.min.js"></script> 
+    <script type="text/javascript" src="./src/js/bootstrap.bundle.min.js"></script> 
+    <!-- <script src="./src/js/jquery-3.0.0.min.js"></script>  -->
+    <script src="./src/js/plugin.js"></script> 
+    <script src="./src/js/jquery.mCustomScrollbar.concat.min.js"></script> 
+    <script src="./src/js/custom.js"></script>
+    <!-- <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script> -->
+    
+    <!-- service --> 
+    <div id="service" class="service">
+      <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+              <div class="titlepage">
+                  <h2>Our Clients</h2>
+              </div>
+            </div>
+        </div>
+      </div>
+      <div class="container margin-r-l">
+        <div class="row">
+          <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 thumb">
+            <div class="service-box">
+                <figure>
+                  <a class="fancybox" rel="ligthbox">
+                  <img src="./src/clients/narayana.png" class="zoom img-fluid" alt="">
+                  </a>
+                  <span class="hoverle">
+                    <a class="fancybox product-hover" rel="ligthbox">Narayana Hrudalaya Hospitals</a>
+                  </span>  
+                </figure>
+            </div>
+          </div>
+
+          <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 thumb">
+            <div class="service-box">
+                <figure>
+                  <a class="fancybox" rel="ligthbox">
+                  <img src="./src/clients/people-tree.jpg" class="zoom img-fluid" alt="">
+                  </a>
+                  <span class="hoverle">
+                    <a class="fancybox product-hover" rel="ligthbox">People Tree Hospitals</a>
+                  </span>  
+                </figure>
+            </div>
+          </div>
+
+          <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 thumb">
+            <div class="service-box">
+                <figure>
+                  <a class="fancybox" rel="ligthbox">
+                  <img src="./src/clients/ramiah.jpg" class="zoom img-fluid" alt="">
+                  </a>
+                  <span class="hoverle">
+                    <a class="fancybox product-hover" rel="ligthbox">MSR College Hospitals</a>
+                  </span>  
+                </figure>
+            </div>
+          </div>
+
+          <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 thumb">
+            <div class="service-box">
+                <figure>
+                  <a class="fancybox" rel="ligthbox">
+                  <img src="./src/clients/tattva.jpg" class="zoom img-fluid" alt="">
+                  </a>
+                  <span class="hoverle">
+                    <a class="fancybox product-hover" rel="ligthbox">Sri Veda Sattva</a>
+                  </span>  
+                </figure>
+            </div>
+          </div>
+
+          <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 thumb">
+            <div class="service-box">
+                <figure>
+                  <a class="fancybox" rel="ligthbox">
+                  <img src="./src/clients/ayurvedic.jpg" class="zoom img-fluid" alt="">
+                  </a>
+                  <span class="hoverle">
+                    <a class="fancybox product-hover" rel="ligthbox">Sri Sri College Of Ayurvedic
+                      Science &Research Hospital</a>
+                  </span>  
+                </figure>
+            </div>
+          </div>
+
+          <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 thumb">
+            <div class="service-box">
+                <figure>
+                  <a class="fancybox" rel="ligthbox">
+                  <img src="./src/clients/commando.jpg" class="zoom img-fluid" alt="">
+                  </a>
+                  <span class="hoverle">
+                    <a class="fancybox product-hover" rel="ligthbox">Commando Hospitals</a>
+                  </span>  
+                </figure>
+            </div>
+          </div>
+
+          <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 thumb">
+            <div class="service-box">
+                <figure>
+                  <a class="fancybox" rel="ligthbox">
+                  <img src="./src/clients/narayana-nursing.jpg" class="zoom img-fluid" alt="">
+                  </a>
+                  <span class="hoverle">
+                    <a class="fancybox product-hover" rel="ligthbox">Narayana College of Nursing</a>
+                  </span>  
+                </figure>
+            </div>
+          </div>
+          
+          <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 thumb">
+            <div class="service-box">
+                <figure>
+                  <a class="fancybox" rel="ligthbox">
+                  <img src="./src/clients/ccd.jpg" class="zoom img-fluid" alt="">
+                  </a>
+                  <span class="hoverle">
+                    <a class="fancybox product-hover" rel="ligthbox">Cafe Coffee Day</a>
+                  </span>  
+                </figure>
+            </div>
+          </div>
+
+          <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 thumb">
+            <div class="service-box">
+                <figure>
+                  <a class="fancybox" rel="ligthbox">
+                  <img src="./src/clients/bvg.jpg" class="zoom img-fluid" alt="">
+                  </a>
+                  <span class="hoverle">
+                    <a class="fancybox product-hover" rel="ligthbox">BVG Pvt Ltd</a>
+                  </span>  
+                </figure>
+            </div>
+          </div>
+
+          <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 thumb">
+            <div class="service-box">
+                <figure>
+                  <a class="fancybox" rel="ligthbox">
+                  <img src="./src/clients/gunam.jfif" class="zoom img-fluid" alt="">
+                  </a>
+                  <span class="hoverle">
+                    <a class="fancybox product-hover" rel="ligthbox">Gunam Hospital Hosur</a>
+                  </span>  
+                </figure>
+            </div>
+          </div>
+
+          <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 thumb">
+            <div class="service-box">
+                <figure>
+                  <a class="fancybox" rel="ligthbox">
+                  <img src="./src/clients/uds.png" class="zoom img-fluid" alt="">
+                  </a>
+                  <span class="hoverle">
+                    <a class="fancybox product-hover" rel="ligthbox">Updater Services</a>
+                  </span>  
+                </figure>
+            </div>
+          </div>
+
+          <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 thumb">
+            <div class="service-box">
+                <figure>
+                  <a class="fancybox" rel="ligthbox">
+                  <img src="./src/clients/quess.png" class="zoom img-fluid" alt="">
+                  </a>
+                  <span class="hoverle">
+                    <a class="fancybox product-hover" rel="ligthbox">Quess</a>
+                  </span>  
+                </figure>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <footr>
+      <div class="footer">
+        <div class="container">
+            <div class="row justify-content-end">
+              <div class="col-lg-2 col-md-6 col-sm-12 width">
+                  <div class="address">
+                    <h3>Address</h3>
+                    <i><a href="https://maps.app.goo.gl/8YT6aCeE9fA7WpUU6" style="color: white;"><img src="./src/images/3.png"></a></i>
+                  </div>
+              </div>
+              <div class="col-lg-2 col-md-6 col-sm-12 width">
+                  <div class="address">
+                    <h3>Contact</h3>
+                    <ul class="contant_icon">
+                        <li><a href="mailto:pragyafashion@gmail.com"><img src="./src/images/email.png" alt="icon"/></a></li>
+                        <li><a href="tel:7019212140"><img src="./src/images/signal.png" alt="icon"/></a></li>
+                    </ul>
+                  </div>
+              </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Developed by <a href="https://github.com/sourceganesh"><strong>Ganesh S</strong></a></p>
+        </div>
+      </div>
+  </footr>
+
+  </body>
+</html>

@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     <!-- basic -->
+     <meta charset="utf-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <!-- mobile metas -->
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+     <!-- site metas -->
+     <title>Pragya Fashions</title>
+     <meta name="keywords" content="">
+     <meta name="description" content="">
+     <meta name="author" content="">
+     <!-- bootstrap css -->
+     <link rel="stylesheet" href="./src/css/bootstrap.min.css">
+     <!-- style css -->
+     <link rel="stylesheet" href="./src/css/style.css">
+     <!-- Responsive-->
+     <link rel="stylesheet" href="./src/css/responsive.css">
+     <!-- fevicon -->
+     <!-- Scrollbar Custom CSS -->
+     <link rel="stylesheet" href="./src/css/jquery.mCustomScrollbar.min.css">
+     <!-- Tweaks for older IEs-->
+     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+     <!--[if lt IE 9]>
+     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+     <style>
+
+      .product-hover{
+        opacity: 0;
+      }
+    
+      .hoverle:hover .product-hover{
+        opacity: 1;
+      }
+      @media only screen and (max-width: 575.98px) { 
+        .col-xs-6{
+          width: 50%;
+          float: left;
+        }
+      }
+    
+      .product-title{
+        padding: 5%;
+        text-align: center;
+        font-size: 18px;
+        background-color: grey;
+        color: white;
+      }
+    
+      .service-box{
+        border: 2px solid #0fc690;
+      }
+      .fancybox-container.fancybox-is-open{
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="loader_bg">
+      <div class="loader"><img src="./src/images/loading.gif" alt="#" /></div>
+    </div>
+    <header>
+    <div class="header">
+      <div class="container">
+         <div class="row">
+            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-4 col logo_section">
+               <div class="full">
+                  <div class="center-desk">
+                     <div class="logo"> <a href="index.html" style="white-space: nowrap; z-index: 1000;">Pragya Fashions</a></div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-xl-9 col-lg-9 col-md-12 col-sm-12" style="text-align: right;">
+               <div class="menu-area" style="z-index: 999;">
+                  <div class="limit-box">
+                     <nav class="main-menu">
+                        <ul class="menu-area-main">
+                           <li class="active"> <a href="{% url 'core:index">Home</a> </li>
+                           <li> <a href="{% url 'core:index#about">About</a> </li>
+                           <li> <a href="{% url 'core:index#testimonial">Contact us</a> </li>
+                           <li> <a href="{% url 'core:products">Products</a> </li>
+                           <li> <a href="{% url 'core:clients">Our Clients</a> </li>
+                        </ul>
+                     </nav>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- end header inner --> 
+   </header>
+
+   <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./src/js/popper.min.js"></script> 
+    <script type="text/javascript" src="./src/js/bootstrap.bundle.min.js"></script> 
+    <!-- <script src="./src/js/jquery-3.0.0.min.js"></script>  -->
+    <script src="./src/js/plugin.js"></script> 
+    <script src="./src/js/jquery.mCustomScrollbar.concat.min.js"></script> 
+    <script src="./src/js/custom.js"></script>
+    <!-- <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script> -->
+    <!-- service --> 
+  <div id="service" class="service">
+    <div class="container">
+      <div class="row">
+          <div class="col-md-12">
+            <div class="titlepage">
+                <h2 style="white-space: nowrap;">Our Products</h2>
+            </div>
+          </div>
+      </div>
+    </div>
+
+
+    <div class="container" id="hospital">
+      <div class="row">
+          <div class="col-md-12">
+            <div class="titlepage">
+                <h1 style="white-space: nowrap;">Hospital Linens</h2>
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <div class="container margin-r-l">
+      <div class="row">
+          <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-xs-6 thumb">
+            <div class="service-box">
+                <figure>
+                  <a class="fancybox" rel="ligthbox">
+                  <img  src="./src/products/1.jpg" class="zoom img-fluid "  alt="">
+                  </a>
+                  <span class="hoverle">
+                  <a class="fancybox product-hover" rel="ligthbox">Scrub Suit(Reg)</a>
+                  </span>  
+                </figure>
+                <div class="product-title">Scrub Suit(Reg)</div>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-xs-6 thumb">
+            <div class="service-box">
+                <figure>
+                  <a class="fancybox" rel="ligthbox">
+                  <img  src="./src/products/2.jpg" class="zoom img-fluid "  alt="">
+                  </a>
+                  <span class="hoverle">
+                  <a class="fancybox product-hover" rel="ligthbox">Scrub Suit(V-Neck)</a>
+                  </span>  
+                </figure>
+                <div class="product-title">Scrub Suit(V-Neck)</div>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-xs-6 thumb">
+            <div class="service-box">
+                <figure>
+                  <a class="fancybox" rel="ligthbox">
+                  <img  src="./src/products/3.jpeg" class="zoom img-fluid "  alt="">
+                  </a>
+                  <span class="hoverle">
+                  <a class="fancybox product-hover" rel="ligthbox">Scrub Gown</a>
+                  </span>  
+                </figure>
+                <div class="product-title">Scrub Gown</div>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-xs-6 thumb">
+            <div class="service-box">
+                <figure>
+                  <a class="fancybox" rel="ligthbox">
+                  <img  src="./src/products/4.jpg" class="zoom img-fluid "  alt="">
+                  </a>
+                  <span class="hoverle">
+                  <a class="fancybox product-hover" rel="ligthbox">Surgeon Apron</a>
+                  </span>  
+                </figure>
+                <div class="product-title">Surgeon Apron</div>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-xs-6 thumb">
+            <div class="service-box">
+                <figure>
+                  <a class="fancybox" rel="ligthbox">
+                  <img  src="./src/products/4.jpg" class="zoom img-fluid "  alt="">
+                  </a>
+                  <span class="hoverle">
+                  <a class="fancybox product-hover" rel="ligthbox">Surgeon Apron</a>
+                  </span>  
+                </figure>
+                <div class="product-title">Surgeon Apron</div>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-xs-6 thumb">
+            <div class="service-box">
+                <figure>
+                  <a class="fancybox" rel="ligthbox">
+                  <img  src="./src/products/5.jpg" class="zoom img-fluid "  alt="">
+                  </a>
+                  <span class="hoverle">
+                  <a class="fancybox product-hover" rel="ligthbox">Patient Gown</a>
+                  </span>  
+                </figure>
+                <div class="product-title">Patient Gown</div>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-xs-6 thumb">
+            <div class="service-box">
+                <figure>
+                  <a class="fancybox" rel="ligthbox">
+                  <img  src="./src/products/6.jpg" class="zoom img-fluid "  alt="">
+                  </a>
+                  <span class="hoverle">
+                  <a class="fancybox product-hover" rel="ligthbox">Patient Pyjama</a>
+                  </span>  
+                </figure>
+                <div class="product-title">Patient Pyjama</div>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-xs-6 thumb">
+            <div class="service-box">
+                <figure>
+                  <a class="fancybox" rel="ligthbox">
+                  <img  src="./src/products/8.jpg" class="zoom img-fluid "  alt="">
+                  </a>
+                  <span class="hoverle">
+                  <a class="fancybox product-hover" rel="ligthbox">Caps, Masks</a>
+                  </span>  
+                </figure>
+                <div class="product-title">Caps, Masks</div>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-xs-6 thumb">
+            <div class="service-box">
+                <figure>
+                  <a class="fancybox" rel="ligthbox">
+                  <img  src="./src/products/5.jpg" class="zoom img-fluid "  alt="">
+                  </a>
+                  <span class="hoverle">
+                  <a class="fancybox product-hover" rel="ligthbox">Patient Gown</a>
+                  </span>  
+                </figure>
+                <div class="product-title">Patient Gown</div>
+            </div>
+          </div>
+ 
+          <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-xs-6 thumb">
+            <div class="service-box">
+                <figure>
+                  <a class="fancybox" rel="ligthbox">
+                  <img  src="./src/products/11.jpg" class="zoom img-fluid "  alt="">
+                  </a>
+                  <span class="hoverle">
+                  <a class="fancybox product-hover" rel="ligthbox">Abdominal Sheet</a>
+                  </span>  
+                </figure>
+                <div class="product-title">Abdominal Sheet</div>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-xs-6 thumb">
+            <div class="service-box">
+                <figure>
+                  <a class="fancybox" rel="ligthbox">
+                  <img  src="./src/products/14.jpg" class="zoom img-fluid "  alt="">
+                  </a>
+                  <span class="hoverle">
+                  <a class="fancybox product-hover" rel="ligthbox">Doctor Coat</a>
+                  </span>  
+                </figure>
+                <div class="product-title">Doctor Coat</div>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-xs-6 thumb">
+            <div class="service-box">
+                <figure>
+                  <a class="fancybox" rel="ligthbox">
+                  <img  src="./src/products/15.jpg" class="zoom img-fluid "  alt="">
+                  </a>
+                  <span class="hoverle">
+                  <a class="fancybox product-hover" rel="ligthbox">Doctor Coat(Full Hand)</a>
+                  </span>  
+                </figure>
+                <div class="product-title">Doctor Coat(Full Hand)</div>
+            </div>
+          </div>
+    
+          <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-xs-6 thumb">
+            <div class="service-box">
+                <figure>
+                  <a class="fancybox" rel="ligthbox">
+                  <img  src="./src/products/18.jpg" class="zoom img-fluid "  alt="">
+                  </a>
+                  <span class="hoverle">
+                  <a class="fancybox product-hover" rel="ligthbox">Staff Coat</a>
+                  </span>  
+                </figure>
+                <div class="product-title">Staff Coat</div>
+            </div>
+          </div>
+   
+          <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-xs-6 thumb">
+            <div class="service-box">
+                <figure>
+                  <a class="fancybox" rel="ligthbox">
+                  <img  src="./src/products/19.jpg" class="zoom img-fluid "  alt="">
+                  </a>
+                  <span class="hoverle">
+                  <a class="fancybox product-hover" rel="ligthbox">Staff Coat</a>
+                  </span>  
+                </figure>
+                <div class="product-title">Staff Coat</div>
+            </div>
+          </div>
+      
+          <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-xs-6 thumb">
+            <div class="service-box">
+                <figure>
+                  <a class="fancybox" rel="ligthbox">
+                  <img  src="./src/products/20.jpg" class="zoom img-fluid "  alt="">
+                  </a>
+                  <span class="hoverle">
+                  <a class="fancybox product-hover" rel="ligthbox">House Keep Apron</a>
+                  </span>  
+                </figure>
+                <div class="product-title">House Keep Apron</div>
+            </div>
+          </div>
+      
+          <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-xs-6 thumb">
+            <div class="service-box">
+                <figure>
+                  <a class="fancybox" rel="ligthbox">
+                  <img  src="./src/products/19.jpg" class="zoom img-fluid "  alt="">
+                  </a>
+                  <span class="hoverle">
+                  <a class="fancybox product-hover" rel="ligthbox">Staff Coat</a>
+                  </span>  
+                </figure>
+                <div class="product-title">Staff Coat</div>
+            </div>
+          </div>
+      
+          <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-xs-6 thumb">
+            <div class="service-box">
+                <figure>
+                  <a class="fancybox" rel="ligthbox">
+                  <img  src="./src/products/22.jpg" class="zoom img-fluid "  alt="">
+                  </a>
+                  <span class="hoverle">
+                  <a class="fancybox product-hover" rel="ligthbox">Over Gown</a>
+                  </span>  
+                </figure>
+                <div class="product-title">Over Gown</div>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-xs-6 thumb">
+            <div class="service-box">
+                <figure>
+                  <a class="fancybox" rel="ligthbox">
+                  <img  src="./src/products/26.jpeg" class="zoom img-fluid "  alt="">
+                  </a>
+                  <span class="hoverle">
+                  <a class="fancybox product-hover" rel="ligthbox">Freeze Blanket</a>
+                  </span>  
+                </figure>
+                <div class="product-title">Freeze Blanket</div>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-xs-6 thumb">
+            <div class="service-box">
+                <figure>
+                  <a class="fancybox" rel="ligthbox">
+                  <img  src="./src/products/17.png" class="zoom img-fluid "  alt="">
+                  </a>
+                  <span class="hoverle">
+                  <a class="fancybox product-hover" rel="ligthbox">Bed and Pillow Covers</a>
+                  </span>  
+                </figure>
+                <div class="product-title">Bed and Pillow Covers</div>
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <div class="container" id="school">
+      <div class="row">
+          <div class="col-md-12">
+            <div class="titlepage">
+                <h1 style="white-space: nowrap;">School Uniforms</h2>
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <div class="container margin-r-l">
+      <div class="row">
+        
+        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-xs-6 thumb">
+          <div class="service-box">
+              <figure>
+                <a class="fancybox" rel="ligthbox">
+                <img  src="./src/products/school-shirt.jpg" class="zoom img-fluid "  alt="">
+                </a>
+                <span class="hoverle">
+                <a class="fancybox product-hover" rel="ligthbox">School Shirts</a>
+                </span>  
+              </figure>
+              <div class="product-title">School Shirts</div>
+          </div>
+        </div>
+
+        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-xs-6 thumb">
+          <div class="service-box">
+              <figure>
+                <a class="fancybox" rel="ligthbox">
+                <img  src="./src/products/school-skirts.jpg" class="zoom img-fluid "  alt="">
+                </a>
+                <span class="hoverle">
+                <a class="fancybox product-hover" rel="ligthbox">School Skirts</a>
+                </span>  
+              </figure>
+              <div class="product-title">School Skirts</div>
+          </div>
+        </div>
+
+        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-xs-6 thumb">
+          <div class="service-box">
+              <figure>
+                <a class="fancybox" rel="ligthbox">
+                <img  src="./src/products/school-tshirt.jpg" class="zoom img-fluid "  alt="">
+                </a>
+                <span class="hoverle">
+                <a class="fancybox product-hover" rel="ligthbox">School T-Shirts</a>
+                </span>  
+              </figure>
+              <div class="product-title">School T-Shirts</div>
+          </div>
+        </div>
+
+        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-xs-6 thumb">
+          <div class="service-box">
+              <figure>
+                <a class="fancybox" rel="ligthbox">
+                <img  src="./src/products/school-trousers.jpg" class="zoom img-fluid "  alt="">
+                </a>
+                <span class="hoverle">
+                <a class="fancybox product-hover" rel="ligthbox">School Trousers</a>
+                </span>  
+              </figure>
+              <div class="product-title">School Trousers</div>
+          </div>
+        </div>
+
+        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-xs-6 thumb">
+          <div class="service-box">
+              <figure>
+                <a class="fancybox" rel="ligthbox">
+                <img  src="./src/products/school-tracks.jpg" class="zoom img-fluid "  alt="">
+                </a>
+                <span class="hoverle">
+                <a class="fancybox product-hover" rel="ligthbox">School Tracks</a>
+                </span>  
+              </figure>
+              <div class="product-title">School Tracks</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container" id="industrial">
+      <div class="row">
+          <div class="col-md-12">
+            <div class="titlepage">
+                <h1 style="white-space: nowrap;">Industrial Wear</h2>
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <div class="container margin-r-l">
+      <div class="row">
+        
+        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-xs-6 thumb">
+          <div class="service-box">
+              <figure>
+                <a class="fancybox" rel="ligthbox">
+                <img  src="{{ prod.image.url }}" class="zoom img-fluid "  alt="">
+                </a>
+                <span class="hoverle">
+                <a class="fancybox product-hover" rel="ligthbox">{{ prod.name }}</a>
+                </span>  
+              </figure>
+              <div class="product-title">{{ prod.name }}</div>
+          </div>
+        </div>
+
+        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-xs-6 thumb">
+          <div class="service-box">
+              <figure>
+                <a class="fancybox" rel="ligthbox">
+                <img  src="{{ prod.image.url }}" class="zoom img-fluid "  alt="">
+                </a>
+                <span class="hoverle">
+                <a class="fancybox product-hover" rel="ligthbox">{{ prod.name }}</a>
+                </span>  
+              </figure>
+              <div class="product-title">{{ prod.name }}</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  
+    <footr>
+      <div class="footer">
+        <div class="container">
+            <div class="row justify-content-end">
+              <div class="col-lg-2 col-md-6 col-sm-12 width">
+                  <div class="address">
+                    <h3>Address</h3>
+                    <i><a href="https://maps.app.goo.gl/8YT6aCeE9fA7WpUU6" style="color: white;"><img src="./src/images/3.png"></a></i>
+                  </div>
+              </div>
+              <div class="col-lg-2 col-md-6 col-sm-12 width">
+                  <div class="address">
+                    <h3>Contact</h3>
+                    <ul class="contant_icon">
+                        <li><a href="mailto:pragyafashion@gmail.com"><img src="./src/images/email.png" alt="icon"/></a></li>
+                        <li><a href="tel:7019212140"><img src="./src/images/signal.png" alt="icon"/></a></li>
+                    </ul>
+                  </div>
+              </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Developed by <a href="https://github.com/sourceganesh"><strong>Ganesh S</strong></a></p>
+        </div>
+      </div>
+  </footr>
+
+  </body>
+</html>
